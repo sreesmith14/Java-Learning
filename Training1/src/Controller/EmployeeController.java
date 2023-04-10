@@ -28,11 +28,14 @@ public class EmployeeController implements EmployeeInterface {
 
 	public void viewEmployee() {
 		// System.out.println(emp);
-		Iterator i = emplist.iterator();
-		while (i.hasNext()) {
-			System.out.println(i.next());
-		}
+		//Iterator i = emplist.iterator();
+		//while (i.hasNext()) {
+		//	System.out.println(i.next());
+		//}
+		emplist.forEach(emlst -> System.out.println(emlst));
 
+				
+			
 	}
 
 	public void serial() throws IOException {

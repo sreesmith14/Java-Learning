@@ -1,0 +1,18 @@
+package New;
+
+interface Additionn{
+	public int add(int a,int b);
+	
+}
+
+public class Java8 {
+ public static void main(String []args)
+ {
+	// Func inter var=()->{}
+	 Additionn sum = ( a, b)-> {
+
+			return a+b;
+	 };
+	 System.out.println(sum.add(8, 1));
+ }
+}
