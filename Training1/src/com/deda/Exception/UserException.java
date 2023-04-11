@@ -1,18 +1,19 @@
 package com.deda.Exception;
  import java.io.*;
 import com.deda.MainClass;
-class UserException1 extends Exception{
+/*class UserException1 extends Exception{
 
 	public UserException1() {
 		System.out.println("no user");
 	}
-}
+}*/
 
-public class UserException
+public class UserException extends Exception
 {
-	public static void main(String args[])throws IOException
+	public UserException()
 	{
-		try{
+		System.out.println("From UNF Exception");
+		/*try{
 			String username,password;
 			InputStreamReader isr = new InputStreamReader(System.in);
 			BufferedReader br = new BufferedReader(isr);
@@ -36,6 +37,6 @@ public class UserException
 			{
 			System.out.println(ecc);
 			}
-	}
+	*/}
 }
 
