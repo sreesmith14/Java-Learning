@@ -1,0 +1,57 @@
++---------------------------------------------------+
+|                BloodDonor                         |
++---------------------------------------------------+
+| - donorId: int                                   |
+| - firstName: String                              |
+| - lastName: String                               |
+| - age: int                                       |
+| - bloodType: String                              |
+| - contactNumber: String                          |
++---------------------------------------------------+
+| + registerDonor(): void                         |
+| + updateDonor(): void                           |
+| + deleteDonor(): void                           |
+| + viewDonor(): void                             |
+| + searchDonor(): void                           |
+| + donateBlood(): void                           |
+| + viewDonationHistory(): void                   |
++---------------------------------------------------+
+
++---------------------------------------------------+
+|                BloodBank                          |
++---------------------------------------------------+
+| - bankId: int                                    |
+| - bankName: String                               |
+| - bankLocation: String                           |
+| - availableBloodTypes: String[]                  |
+| - bloodInventory: Map<String, int>                |
++---------------------------------------------------+
+| + addBloodBank(): void                          |
+| + updateBloodBank(): void                       |
+| + deleteBloodBank(): void                       |
+| + viewBloodBank(): void                         |
+| + searchBloodBank(): void                       |
+| + viewBloodInventory(): void                    |
+| + requestBlood(): void                          |
++---------------------------------------------------+
+
++---------------------------------------------------+
+|                BloodRecipient                     |
++---------------------------------------------------+
+| - recipientId: int                              |
+| - firstName: String                             |
+| - lastName: String                              |
+| - age: int                                      |
+| - bloodType: String                             |
+| - contactNumber: String                         |
+| - requiredBloodUnits: int                       |
+| - status: String                                |
++---------------------------------------------------+
+| + registerRecipient(): void                    |
+| + updateRecipient(): void                      |
+| + deleteRecipient(): void                      |
+| + viewRecipient(): void                        |
+| + searchRecipient(): void                      |
+| + requestBlood(): void                         |
+| + viewRequestStatus(): void                    |
++---------------------------------------------------+
